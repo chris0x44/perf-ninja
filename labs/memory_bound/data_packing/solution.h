@@ -8,7 +8,7 @@ constexpr int minRandom = 0;
 constexpr int maxRandom = 100;
 
 // FIXME: this data structure can be reduced in size
-struct S {
+struct __attribute__((packed)) S {
   uint8_t i;
   uint8_t s : 7;
   bool b: 1;
